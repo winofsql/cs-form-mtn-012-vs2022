@@ -186,6 +186,7 @@
             // 
             // キャンセル
             // 
+            キャンセル.Location = new Point(404, 170);
             キャンセル.Margin = new Padding(4);
             キャンセル.Name = "キャンセル";
             キャンセル.Size = new Size(133, 26);
