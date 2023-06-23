@@ -33,9 +33,11 @@ namespace cs_form_mtn_012_vs2022
 
         private void 社員コード_Validated(object sender, EventArgs e)
         {
-            // 入力チェック終了後の処理
-            this.社員コード.Text = $"{Int32.Parse(this.社員コード.Text):0000}";
-
+            if (this.ActiveControl != this.社員コード)
+            {
+                // 入力チェック終了後の処理
+                this.社員コード.Text = $"{Int32.Parse(this.社員コード.Text):0000}";
+            }
         }
 
         // 氏名の必須チェック
