@@ -115,12 +115,16 @@ namespace cs_form_mtn_012_vs2022
             string strQuery = @$"insert into `社員マスタ` (
 	`社員コード` 
 	,`氏名` 
+    ,`性別`
 	,`給与` 
+	,`生年月日` 
 )
  values(
 	'{this.社員コード.Text}'
 	,'{this.氏名.Text}'
+	,{((ComboData)this.性別.SelectedItem).Data}
 	,{this.給与.Text}
+	,'{this.生年月日.Value:yyyy/MM/dd}'
 )";
 
             myCommand.CommandText = strQuery;

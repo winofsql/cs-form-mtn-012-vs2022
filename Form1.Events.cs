@@ -5,6 +5,12 @@
         private void Form1_Load(object sender, EventArgs e)
         {
             this.処理区分.SelectedIndex = 0;
+            // ComboData を コンボボックスにセット
+            this.性別.Items.Clear();
+            this.性別.Items.Add(new ComboData("男性", "0"));
+            this.性別.Items.Add(new ComboData("女性", "1"));
+            this.性別.SelectedIndex = 0;
+
         }
 
         // *****************************************

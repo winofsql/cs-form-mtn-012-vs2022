@@ -43,6 +43,10 @@
             キャンセル = new Button();
             タスクバー = new StatusStrip();
             ユーザへのメッセージ = new ToolStripStatusLabel();
+            性別 = new ComboBox();
+            label1 = new Label();
+            Label5 = new Label();
+            生年月日 = new DateTimePicker();
             ヘッド部.SuspendLayout();
             ボディ部.SuspendLayout();
             タスクバー.SuspendLayout();
@@ -120,6 +124,10 @@
             // 
             // ボディ部
             // 
+            ボディ部.Controls.Add(性別);
+            ボディ部.Controls.Add(label1);
+            ボディ部.Controls.Add(Label5);
+            ボディ部.Controls.Add(生年月日);
             ボディ部.Controls.Add(給与);
             ボディ部.Controls.Add(氏名);
             ボディ部.Controls.Add(ラベル4);
@@ -131,7 +139,7 @@
             ボディ部.Margin = new Padding(4);
             ボディ部.Name = "ボディ部";
             ボディ部.Padding = new Padding(4);
-            ボディ部.Size = new Size(559, 241);
+            ボディ部.Size = new Size(559, 265);
             ボディ部.TabIndex = 1;
             ボディ部.TabStop = false;
             ボディ部.Text = "ボディ部";
@@ -179,7 +187,7 @@
             更新.Margin = new Padding(4);
             更新.Name = "更新";
             更新.Size = new Size(133, 26);
-            更新.TabIndex = 6;
+            更新.TabIndex = 8;
             更新.Text = "更新";
             更新.UseVisualStyleBackColor = true;
             更新.Click += 更新_Click;
@@ -190,7 +198,7 @@
             キャンセル.Margin = new Padding(4);
             キャンセル.Name = "キャンセル";
             キャンセル.Size = new Size(133, 26);
-            キャンセル.TabIndex = 7;
+            キャンセル.TabIndex = 9;
             キャンセル.Text = "キャンセル";
             キャンセル.UseVisualStyleBackColor = true;
             キャンセル.Click += キャンセル_Click;
@@ -209,6 +217,44 @@
             ユーザへのメッセージ.Name = "ユーザへのメッセージ";
             ユーザへのメッセージ.Size = new Size(99, 17);
             ユーザへのメッセージ.Text = "ユーザへのメッセージ";
+            // 
+            // 性別
+            // 
+            性別.DropDownStyle = ComboBoxStyle.DropDownList;
+            性別.FormattingEnabled = true;
+            性別.Location = new Point(142, 150);
+            性別.Name = "性別";
+            性別.Size = new Size(83, 23);
+            性別.TabIndex = 5;
+            // 
+            // label1
+            // 
+            label1.AutoSize = true;
+            label1.Location = new Point(25, 153);
+            label1.Margin = new Padding(4, 0, 4, 0);
+            label1.Name = "label1";
+            label1.Size = new Size(31, 15);
+            label1.TabIndex = 4;
+            label1.Text = "性別";
+            // 
+            // Label5
+            // 
+            Label5.AutoSize = true;
+            Label5.Location = new Point(25, 206);
+            Label5.Margin = new Padding(4, 0, 4, 0);
+            Label5.Name = "Label5";
+            Label5.Size = new Size(55, 15);
+            Label5.TabIndex = 6;
+            Label5.Text = "生年月日";
+            // 
+            // 生年月日
+            // 
+            生年月日.Location = new Point(140, 200);
+            生年月日.Margin = new Padding(4);
+            生年月日.Name = "生年月日";
+            生年月日.ShowCheckBox = true;
+            生年月日.Size = new Size(213, 23);
+            生年月日.TabIndex = 7;
             // 
             // Form1
             // 
@@ -253,5 +299,9 @@
         private StatusStrip タスクバー;
         private ToolStripStatusLabel ユーザへのメッセージ;
         internal TextBox 社員コード;
+        private ComboBox 性別;
+        internal Label label1;
+        internal Label Label5;
+        internal DateTimePicker 生年月日;
     }
 }
