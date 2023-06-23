@@ -86,11 +86,13 @@ namespace cs_form_mtn_012_vs2022
 
         private void 給与_Validated(object sender, EventArgs e)
         {
-            if (this.給与.Text.Trim().Length == 0)
+            if (this.ActiveControl != this.給与)
             {
-                this.給与.Text = "0";
+                if (this.給与.Text.Trim().Length == 0)
+                {
+                    this.給与.Text = "0";
+                }
             }
-
         }
 
     }
