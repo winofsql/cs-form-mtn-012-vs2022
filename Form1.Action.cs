@@ -67,7 +67,7 @@ namespace cs_form_mtn_012_vs2022
             this.社員コード.SelectAll();
 
             // キャンセルなので入力したフィールドのクリア
-            this.氏名.Clear();
+            this.氏名.Clear(); 
             this.給与.Clear();
 
         }
