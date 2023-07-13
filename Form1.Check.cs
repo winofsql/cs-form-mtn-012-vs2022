@@ -67,7 +67,7 @@ namespace cs_form_mtn_012_vs2022
             if (this.ActiveControl != this.給与)
             {
                 if (this.ActiveControl == this.キャンセル)
-                { 
+                {   
                     return;
                 }
 
