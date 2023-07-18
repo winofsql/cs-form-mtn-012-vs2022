@@ -68,7 +68,7 @@ namespace cs_form_mtn_012_vs2022
 
             // キャンセルなので入力したフィールドのクリア
             this.氏名.Clear();   
-            this.給与.Clear();
+            this.給与.Clear();   
 
         }
 
